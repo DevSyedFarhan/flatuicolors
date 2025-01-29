@@ -28,7 +28,26 @@ html,body{
     background-color: #3C40C6;
     background-image: url(https://flatuicolors.com/static/img/stars-opacity.0979c1.svg);
 }
+#page1>h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#page1>h1:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: yellow;
+    width: 0%;
+    transition: all 0.3s ease;
+    height: 2px;
 
+}
+#page1>h1:hover::after {
+    width: 100%;
+}
 nav{
     display: flex;
     align-items: center;
@@ -53,7 +72,7 @@ nav a::after{
     position: absolute;
     left: 0;
     bottom: -5px;
-    background-color: white;
+    background-color: yellow;
     width: 0%;
     transition: all 0.3s ease;
     height: 2px;
@@ -73,19 +92,28 @@ nav h1:active{
 nav a:hover{
     font-size: 1.2vw;
 }
-
+#page-1-color{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+}
 .color-pallete{
     height: 230px;
     width: 320px;
     border-radius: 10px;
     background-color: white;
     padding: 1.5vh 1.1vw;
+    transition: all 0.3s ease;
 }
 .color-pallete .top{
     height: 80%;
     border-radius: 5px;
     width: 100%;
-    background-color: red;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
 }
 .color-pallete .btm{
     height: 20%;
@@ -94,4 +122,65 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     color: black;
+}
+.color-pallete .top .column {
+    height: 25%;
+    width: 20%;
+}
+.column:nth-child(1) {
+    background-color: #FF5733;}
+.column:nth-child(2) {
+    background-color: #33FF57;}
+.column:nth-child(3) {
+    background-color: #3357FF;}
+.column:nth-child(4) {
+    background-color: #FF33A1;}
+.column:nth-child(5) {
+    background-color: #F0FF33;}
+.column:nth-child(6) {
+    background-color: #33FFF3;}
+.column:nth-child(7) {
+    background-color: #FF33B0;}
+.column:nth-child(8) {
+    background-color: #8033FF;}
+.column:nth-child(9) {
+    background-color: #FFB533;}
+.column:nth-child(10) {
+    background-color: #33D1FF;
+}
+.column:nth-child(11) {
+    background-color: #A1FF33;
+}
+.column:nth-child(12) {
+    background-color: #FF7F33;
+}
+.column:nth-child(13) {
+    background-color: #33FF70;
+}
+.column:nth-child(14) {
+    background-color: #FF3333;
+}
+.column:nth-child(15) {
+    background-color: #70FF33;
+}
+.column:nth-child(16) {
+    background-color: #33FFB5;
+}
+.column:nth-child(17) {
+    background-color: #FF3D7F;
+}
+.column:nth-child(18) {
+    background-color: #33FF90;
+}
+.column:nth-child(19) {
+    background-color: #FF3380;
+}
+.column:nth-child(20) {
+    background-color: #FF5C33;
+}
+
+.color-pallete:hover{
+    transform: scale(1.03) skew(1deg);
+    cursor: pointer;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, .4);
 }
