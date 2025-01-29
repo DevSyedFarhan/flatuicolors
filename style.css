@@ -12,6 +12,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: woof2;
+    user-select: none;
 }
 
 html,body{
@@ -33,6 +34,7 @@ html,body{
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 #page1>h1:after{
     content: "";
@@ -87,7 +89,7 @@ nav a:hover::after {
     width: 100%;
 }
 nav h1:active{
-    transform: scale(.9);
+    font-size: 1.6vw;
 }
 nav a:hover{
     font-size: 1.2vw;
@@ -95,7 +97,7 @@ nav a:hover{
 #page-1-color{
     display: flex;
     flex-wrap: wrap;
-    gap: 2vw;
+    gap: 4vh 2vw;
     align-items: center;
     justify-content: center;
 }
