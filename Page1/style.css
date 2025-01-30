@@ -1,0 +1,22 @@
+@font-face {
+    font-family: woof;
+    src: url(./assets/font/7cHqv4kjgoGqM7E30-8s51os.ttf);
+}
+@font-face {
+    font-family: woof2;
+    src: url(./assets/font/7cHqv4kjgoGqM7E3t-4s51os.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: woof2;
+    user-select: none;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
